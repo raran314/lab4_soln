@@ -325,11 +325,11 @@ Now implement `lift_option`.
    Notice the nice symmetry, which is perhaps made clearer when
    parenthesized as
 
-     ('a -> 'a -> 'a) -> ('a option -> 'a option -> 'a option)      .
+     ('a -> 'a -> 'a) -> ('a option -> 'a option -> 'a option)     .
 
-   Note that both the first and second argument of `f` must be of the
-   same type as the result type of `f` (and hence of each other). Do
-   you see why? 
+   To think about: Both the first and second argument of `f` must be
+   of the same type as the result type of `f` (and hence of each
+   other). Do you see why?
  *)
 let lift_option (f : 'a -> 'a -> 'a) (x : 'a option) (y : 'a option)
               : 'a option =
