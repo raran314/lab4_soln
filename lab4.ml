@@ -19,7 +19,7 @@ higher-order functions `curry` and `uncurry` for currying and uncurrying
 binary functions (functions of two arguments). The functions are named
 after mathematician Haskell Curry '1920. (By way of reminder, a
 curried function takes its arguments one at a time. An uncurried
-function takes them all at once in a pair.)
+function takes them all at once in a tuple.)
 
 We start with the polymorphic higher-order function `curry`, which
 takes as its argument an uncurried binary function and returns the
